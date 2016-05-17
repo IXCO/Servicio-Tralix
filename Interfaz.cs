@@ -23,6 +23,7 @@ namespace Servicio_Tralix
     {
         private String nombreCertificado;
         private String contraseña;
+
         public Interfaz()
         {
             InitializeComponent();
@@ -115,10 +116,6 @@ namespace Servicio_Tralix
                 case"MASERTEC":
                     nombreCertificado = Properties.Resources.nombreCertificadoMasertec;
                     contraseña = Properties.Resources.claveCertificadoMasertec;
-                    break;
-                case "FOTUNAL":
-                    nombreCertificado = Properties.Resources.nombreCertificadoFotunal;
-                    contraseña = Properties.Resources.claveCertificadoFotunal;
                     break;
                 default:
                     MessageBox.Show("No se encontro el certificado para la empresa seleccionada.");
